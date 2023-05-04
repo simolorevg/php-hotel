@@ -48,11 +48,21 @@ $hotels = [
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <title>Document</title>
 </head>
 
 <body>
-
+    <h1 class="text-center">4 Hotel</h1>
+    <div class="container">
+        <ul>
+            <?php foreach ($hotels as $hotel) { ?>
+                <li><?php echo $hotel['name']; ?></li>
+            <?php
+            } ?>
+        </ul>
+    </div>
 </body>
 
 </html>
